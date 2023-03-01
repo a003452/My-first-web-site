@@ -3,36 +3,75 @@
   <head>
     <title>To Do list 1 - Waking up at 7 every day</title>
     <meta charset="utf-8">
+    <style>
+      .overlap {
+        border-right:0;
+      }
+      body {
+        margin:0;
+        padding:20px;
+      }
+      a {
+        color:black;
+        text-decoration:none;
+      }
+      h1 {
+        font-size:45px;
+        text-align:left;
+        border-bottom:1px solid gray;
+        margin:0;
+        padding-bottom:20px;
+      }
+      h2 {
+        border-right:1px solid gray;
+        width:250px;
+        margin:0;
+        padding-right:40px;
+        text-align:left;
+      }
+      ul {
+        border-right:1px solid gray;
+        width:210px;
+        margin:0;
+        padding:20px;
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: 251px 1fr;
+      }
+    </style>
   </head>
-  <body style="margin-left: 50px">
-    <h1><a href="index.html">To Do <strong>l</strong>ist</a></h1>
-      <ul>
-        <li><a href="1.html">매일 7시 기상</a></li>
-        <li><a href="2.html">다이어트</a></li>
-        <li><a href="3.html">코딩공부</a></li>
-        <li><a href="4.html">어학공부</a></li>
-        <li><a href="5.html">유튜브 줄이기, 게임 줄이기</a></li>
-        <li><a href="6.html">책(독서)</a></li>
-        <li><a href="7.html">졸업</a></li>
-      </ul>
-    <h2>매일 7시 기상</h2>
-    <ul>
-      <li>30분 공부</li>
-      <ul>
-        <li>강의 1개 듣기</li>
-        <li>단어 암기</li>
+  <body style="margin-left:50px">
+    <h1><a href="index.html">To Do list</a></h1>
+      <div class="grid">
         <ul>
-          <li>히라가나 10개</li>
-          <li>가타카나 2개</li>
+          <li><a href="1.html">매일 7시 기상</a></li>
+          <li><a href="2.html">다이어트</a></li>
+          <li><a href="3.html">코딩공부</a></li>
+          <li><a href="4.html">어학공부</a></li>
+          <li><a href="5.html">유튜브 줄이기, 게임 줄이기</a></li>
+          <li><a href="6.html">책(독서)</a></li>
         </ul>
-        <li>회화 3~5문장</li>
-      </ul>
-      <li>40분 운동(주3회이상)</li>
-      <ul>
-        <li>자전거타기(여의도한바퀴)</li>
-        <li>4,000보 걷기</li>
-        <li>오디오북 듣기(책읽어드립니다)</li>
-      </ul>
-    </ul>
+          <div>
+            <ul class="overlap">
+              <li>30분 공부</li>
+              <ul class="overlap">
+                <li>강의 1개 듣기</li>
+                <li>단어 암기</li>
+                <ul class="overlap">
+                  <li>히라가나 10개</li>
+                  <li>가타카나 2개</li>
+                </ul>
+                <li>회화 3~5문장</li>
+              </ul>
+              <li>40분 운동(주3회이상)</li>
+              <ul class="overlap">
+                <li>자전거타기(여의도한바퀴)</li>
+                <li>4,000보 걷기</li>
+                <li>오디오북 듣기</li>
+              </ul>
+            </ul>
+          </div>
+      </div>
   </body>
 </html>
