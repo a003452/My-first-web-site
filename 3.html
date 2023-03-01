@@ -3,9 +3,47 @@
   <head>
     <title>To Do list 3 - Studying Coding</title>
     <meta charset="utf-8">
+    <style>
+      .overlap {
+        border-right:0;
+      }
+      body {
+        margin:0;
+        padding:20px;
+      }
+      a {
+        color:black;
+        text-decoration:none;
+      }
+      h1 {
+        font-size:45px;
+        text-align:left;
+        border-bottom:1px solid gray;
+        margin:0;
+        padding-bottom:20px;
+      }
+      h2 {
+        border-right:1px solid gray;
+        width:210px;
+        margin:0;
+        text-align:left;
+        padding-right:40px;
+      }
+      ul {
+        border-right:1px solid gray;
+        width:210px;
+        margin:0;
+        padding:20px;
+      }
+      .grid{
+        display: grid;
+        grid-template-columns: 251px 1fr;
+      }
+    </style>
   </head>
-  <body style="margin-left: 50px">
-    <h1><a href="index.html">To Do <strong>l</strong>ist</a></h1>
+  <body style="margin-left:50px">
+    <h1><a href="index.html">To Do list</a></h1>
+    <div class="grid">
       <ul>
         <li><a href="1.html">매일 7시 기상</a></li>
         <li><a href="2.html">다이어트</a></li>
@@ -13,12 +51,11 @@
         <li><a href="4.html">어학공부</a></li>
         <li><a href="5.html">유튜브 줄이기, 게임 줄이기</a></li>
         <li><a href="6.html">책(독서)</a></li>
-        <li><a href="7.html">졸업</a></li>
       </ul>
-    <h2>코딩공부</h2>
-    <ul>
+    <div>
+    <ul class="overlap">
       <li>하루에 1시간씩 정해서</li>
-      <ul>
+      <ul class="overlap">
         <li>HTML5</li>
         <li>CSS3</li>
         <li>Javascript</li>
@@ -29,5 +66,7 @@
         <li>etc</li>
       </ul>
     </ul>
+    </div>
+  </div>
   </body>
 </html>
